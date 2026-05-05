@@ -1,0 +1,43 @@
+/* Global resets and RTL base */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg: #f0f4f8;
+  --color-surface: #ffffff;
+  --color-border: #d1d9e0;
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-danger: #dc2626;
+  --color-success: #16a34a;
+  --color-warning: #d97706;
+  --color-text: #1e293b;
+  --color-muted: #64748b;
+  --color-unclear: #fef3c7;
+  --color-unclear-border: #f59e0b;
+  --radius: 8px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
+}
+
+html {
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  direction: rtl;
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  min-height: 100vh;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+textarea, input {
+  font-family: inherit;
+}

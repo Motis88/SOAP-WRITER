@@ -1,0 +1,77 @@
+.lab-table-wrap {
+  margin-bottom: 16px;
+  overflow-x: auto;
+}
+
+.lab-table-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 6px;
+  color: var(--color-text);
+}
+
+.lab-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.lab-table th,
+.lab-table td {
+  padding: 6px 10px;
+  border: 1px solid var(--color-border);
+  text-align: right;
+}
+
+.lab-table th {
+  background: var(--color-bg);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.lab-test-name {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.flagged-row {
+  background: #fff7ed;
+}
+
+.flag-high {
+  color: var(--color-danger);
+  font-weight: 700;
+}
+
+.flag-low {
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.flag-other {
+  color: var(--color-warning);
+}
+
+.flag-badge {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.flag-badge.flag-high {
+  background: #fee2e2;
+}
+
+.flag-badge.flag-low {
+  background: #dbeafe;
+}
+
+.unclear-cell {
+  background: var(--color-unclear);
+  border: 1px solid var(--color-unclear-border);
+  border-radius: 3px;
+  padding: 1px 4px;
+  font-size: 0.85rem;
+}

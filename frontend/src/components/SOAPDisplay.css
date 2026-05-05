@@ -1,0 +1,192 @@
+.soap-display {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Flags */
+.flags-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.flag-chip {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: var(--color-unclear);
+  border: 1px solid var(--color-unclear-border);
+  color: #92400e;
+}
+
+/* Toolbar */
+.soap-toolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 12px;
+}
+
+.copy-btn {
+  padding: 7px 18px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  font-size: 0.9rem;
+  color: var(--color-text);
+  transition: background 0.15s;
+}
+
+.copy-btn:hover {
+  background: var(--color-bg);
+}
+
+/* Sections */
+.soap-section {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  margin-bottom: 12px;
+  background: var(--color-surface);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.soap-heading {
+  margin: 0;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+
+.soap-s { background: #1e40af; }
+.soap-o { background: #065f46; }
+.soap-a { background: #78350f; }
+.soap-p { background: #4c1d95; }
+
+.soap-subsection {
+  padding: 12px 16px;
+  border-top: 1px solid var(--color-border);
+}
+
+.soap-sub-heading {
+  margin: 0 0 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Lists */
+.soap-list {
+  margin: 0;
+  padding: 0 0 0 18px;
+  list-style: disc;
+}
+
+.soap-list li {
+  padding: 3px 0;
+  font-size: 0.95rem;
+}
+
+.unclear-li {
+  background: var(--color-unclear);
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+/* Editable items */
+.editable-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 1px 4px;
+  transition: background 0.15s;
+}
+
+.editable-item:hover {
+  background: #f1f5f9;
+}
+
+.editable-item.unclear {
+  background: var(--color-unclear);
+  border: 1px solid var(--color-unclear-border);
+}
+
+.edit-icon {
+  font-size: 0.75rem;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.editable-item:hover .edit-icon {
+  opacity: 1;
+}
+
+.editable-active {
+  display: inline-block;
+  width: 100%;
+}
+
+.inline-input {
+  width: 100%;
+  padding: 2px 6px;
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+/* Vitals */
+.vitals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 8px;
+}
+
+.vital-row {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+  background: var(--color-bg);
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+}
+
+.vital-label {
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.vital-value {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-top: 2px;
+}
+
+/* Empty states */
+.empty-section {
+  margin: 0;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  font-style: italic;
+}
+
+.soap-empty-marker {
+  color: #9ca3af;
+}
+
+.empty-hint {
+  color: var(--color-muted);
+}

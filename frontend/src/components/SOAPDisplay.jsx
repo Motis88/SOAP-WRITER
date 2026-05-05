@@ -21,7 +21,7 @@ import './SOAPDisplay.css'
 const FLAG_LABELS = {
   missing_data: 'חסר מידע',
   unclear_text: 'טקסט לא ברור',
-  ocr_used: 'OCR שומש',
+  ocr_used: 'שימוש ב-OCR',
   partial_extraction: 'חילוץ חלקי',
   unknown_pdf_format: 'פורמט PDF לא מוכר',
 }

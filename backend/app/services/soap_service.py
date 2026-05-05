@@ -148,8 +148,8 @@ def structure_text(raw_text: str) -> SOAPNote:
     for sentence in sentences:
         s_score, o_score = _score_sentence(sentence)
 
-        # Check for unclear content
-        if re.search(r"\[.*?\]|\?{2,}|xxx|unclear", sentence, re.IGNORECASE):
+        # Check for unclear content — use bounded match to prevent ReDoS
+        if re.search(r"\[[^\]]{0,200}\]|\?{2,}|xxx|unclear", sentence, re.IGNORECASE):
             flags.append("unclear_text")
             sentence = f"[לא ברור] {sentence}"
 
